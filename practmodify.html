@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beautiful Web Page</title>
+
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-image: url("https://news.umanitoba.ca/wp-content/uploads/2025/03/25-03-13-Storytelling-Story-Northern-Lights-1.gif");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    /* Main card */
+    .container {
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(10px);
+      padding: 30px 40px;
+      border-radius: 15px;
+      width: 400px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      color: violet;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    /* Links */
+    a {
+      color: violet;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ffccff;
+    }
+
+    /* Buttons */
+    button, input[type="submit"], input[type="reset"], input[type="button"] {
+      background: linear-gradient(135deg, violet, blue);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin: 5px 0;
+      transition: 0.3s ease;
+    }
+
+    button:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover {
+      background: linear-gradient(135deg, blue, violet);
+      transform: scale(1.05);
+    }
+
+    /* Form styling */
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input:focus, textarea:focus {
+      box-shadow: 0 0 8px violet;
+    }
+
+    /* Button group */
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .center {
+      text-align: center;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Welcome </h1>
+    <p>This is a beautifully styled web page</p>
+
+    <div class="center">
+      <button onclick="location.href='https://www.w3schools.com/html/html_editor.asp'"
+              title="W3Schools HTML Tutorials">
+        Study HTML 
+      </button>
+    </div>
+
+    <div class="center">
+      <a href="mailto:jj7827@srmist.edu.in">📧 Send Mail</a>
+    </div>
+
+    <form>
+      <label>First Name</label>
+      <input type="text" placeholder="Jaanu">
+
+      <label>Last Name</label>
+      <input type="text" placeholder="Jaanu">
+
+      <label>Date & Time</label>
+      <input type="datetime-local">
+
+      <label>Message</label>
+      <textarea rows="4">I'm Jaanu</textarea>
+
+      <label>Email</label>
+      <input type="email" placeholder="example@mail.com">
+
+      <label>Username</label>
+      <input type="text">
+
+      <label>Password</label>
+      <input type="password">
+
+      <div class="btn-group">
+        <input type="button" value="Catch me!" onclick="alert('Hello Guys!')">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
